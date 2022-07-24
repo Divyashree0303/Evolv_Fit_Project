@@ -1,0 +1,58 @@
+
+[
+    {
+        "userId" : 1,
+        "name"   : "Charvie Sharma",
+        "email"  : "charviesharma@gmail.com",
+        "stepsWalked": 2547,
+        "stepsTarget" : 4000,
+        "performedDate" : "24 Jul",
+        "scheduledDate" : "24 Jul",
+        "calorieIntake" : 3457,
+        "calorieTarget" : 4000 ,
+        "proteinConsumedInGram" : 45,
+        "proteinTargetInGram": 70,
+        "carbConsumedInGram" : 50,
+        "carbTargetInGram" : 70,
+        "fatConsumedInGram" : 35,
+        "fatTargetInGram" : 70,
+        "feedback":false
+    },
+    {
+        "userId" : 2,
+        "name"   : "Nitin Kumar",
+        "email"  : "nitinkumar@gmail.com",
+        "stepsWalked": 6000,
+        "stepsTarget" : 7000,
+        "performedDate" : "30 Jul",
+        "scheduledDate" : "3 Aug",
+        "calorieIntake" : 4567,
+        "calorieTarget" : 4000 ,
+        "proteinConsumedInGram" : 75,
+        "proteinTargetInGram": 80,
+        "carbConsumedInGram" : 60,
+        "carbTargetInGram" : 70,
+        "fatConsumedInGram" : 40,
+        "fatTargetInGram" : 70,
+        "feedback":true
+    },
+    {
+        "userId" : 3,
+        "name"   : "Divya Jain",
+        "email"  : "divyajain@gmail.com",
+        "stepsWalked": 7842,
+        "stepsTarget" : 10000,
+        "performedDate" : "23 Jul",
+        "scheduledDate" : "1 Aug",
+        "calorieIntake" : 2453,
+        "calorieTarget" : 3000,
+        "proteinConsumedInGram" : 55,
+        "proteinTargetInGram": 80,
+        "carbConsumedInGram" : 60,
+        "carbTargetInGram" : 80,
+        "fatConsumedInGram" : 35,
+        "fatTargetInGram" : 50,
+        "feedback":false
+    }
+
+]

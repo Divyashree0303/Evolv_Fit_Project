@@ -1,38 +1,699 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+.body{
+  background-color: #101317;
+  width: 95vw;
+  height: 78vh;
+  box-shadow: 2px 3px 42px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  margin: 8vh 2.5vw 13.5vh;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+
+.nav{
+  position: relative;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.user{
+  position: relative;
+  background-color: #1E262F;
+  margin: 0 auto 4.7vh auto;
+  border-radius: 10px;
+}
+
+.credentials{
   text-align: center;
+  display: inline-block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.email{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  color: #BDBCBE;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.target,.calorie-target{
+  text-align: center;
+  display: inline-block;
+}
+
+.target > h3,.calorie-target > h3{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.target > p,.calorie-target > p{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  color: #BDBCBE;
+  margin: 0;
+}
+
+.time-limit{
+  display: inline-block;
+}
+
+.day{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white;
+  
+}
+
+.day > h3{
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
+.current-day > h3{
+  margin: 0 0 0 0.71vw;
+}
+
+.target-day > h3{
+  margin: 0 0 0 0.95vw;
+}
+
+.target-day{
+  border-radius: 4px;
+}
+
+.arrow-button{
+  background-color: #101317;
+  border-radius: 8px;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.calories-taken{
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.notification{
+  background-color: #36F5C7;
+  color: black;
+}
+
+.change-target{
+  background-color: #101317;
+  color: white;
+  border: 0;
+  width: 3vw;
+  height: 2.5vh;
+  border-radius: 4px;
+}
+
+.modal{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color:  #BDBCBE;
+  box-shadow: 2px 3px 42px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 10px;
+  width: 20.8vw;
+  height: 25.7vh;
+  left: 58.1vw;
+  top: 11vh;
+}
+
+.progress-bar-div{
+  width: 19.61vw;
+  height: 6.1vh;
+  margin: 1.9vh auto 1.9vh auto;
+  border-radius: 4.8px;
+  background-color: #1B1C25;
+}
+
+.target-in-gram{
+  margin: 0 0 0 75%;
+}
+
+.target-nutrient{
+  margin: 0 0 0 0.891vw;
+}
+
+.red{
+  background-color: #CC3838;
+}
+
+span{
+  margin-left: 1.15vw;
+}
+
+progress {
+  width: 17.9vw;
+  border-radius: 20px;
+  -webkit-appearance: none;
+  border: none;
+  position:relative;
+  margin-left: 0.891vw;
+}
+
+progress:before {
+  content: attr(data-label);
+  font-size: 0.7em;
+  vertical-align: 0;
+  position:absolute;
+  left:85%;
+  right:0;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 20px;
+  background: #101317;
+}
+progress::-webkit-progress-value {
+  border-radius: 20px;
+}
+progress::-moz-progress-bar {
+  border-radius: 20px;
+}
+.protein::-webkit-progress-value {
+  background: #F45C84;
+}
+.fats::-webkit-progress-value {
+  background: #03C6FA;
+}
+.carbs::-webkit-progress-value {
+  background: #F0C50F;
+}
+
+@media screen and (min-width: 767px)  {
+
+  nav > div{
+    flex: 1 1 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    height: 11vh;
+}
+
+  .steps{
+    position: absolute;
+    top: 3.276vh;
+    left:33vw;
   }
+  
+  .workout{
+    position: absolute;
+    top: 3.276vh;
+    left: 47.8vw;
+  }
+  
+  .nutrition{
+    position: absolute;
+    top: 3.276vh;
+    left: 68.6vw;
+  }
+
+  .user{
+    width: 92vw;
+    height: 12.5vh;
+  }
+
+  img{
+    height: 6.2vh;
+    width: 4vw;
+    vertical-align: middle;
+  }
+
+  .profile-img{
+    height: 6.2vh;
+    position: absolute;
+    left: 1.1vw;
+    top: 50%;
+    transform: translate(0, -50%);
+  
+  }
+
+  .credentials{
+    position: absolute;
+    left: 6.9vw;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .name{
+    font-size: 2.2vh;
+    line-height: 2.6vh;
+  }
+
+  .email{
+    font-size: 1.6vh;
+    line-height: 1.9vh;
+  }
+  
+  .progressBar{
+    width: 5vw;
+    position: absolute;
+    left: 29.5vw;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .walked-value,.calories-taken > h3{
+    font-size:1.8vh;
+    font-family:Montserrat;
+    font-weight:700;
+    color:white;
+    margin: 0;
+  }
+
+  .walked,.calories-taken > p{
+    font-size:1.21vh;
+    font-family:Montserrat;
+    font-weight:500;
+    color:#BDBCBE;
+    margin: 0;
+  }
+
+  .target{
+    position: absolute;
+    left: 36.7vw;
+    top: 50%;
+    transform: translate(0, -50%);
+
+  }
+
+  .target > h3,.calorie-target > h3{
+    font-size: 2.5vh;
+  }
+
+  .target > p,.calorie-target > p{
+    font-size: 1.5vh;
+  }
+
+  .time-limit{
+    height: 80%;
+    position: absolute;
+    left: 46.8vw;
+    top: 2vh;
+
+  }
+
+  .day{
+    font-size: 2.18vh;
+    height: 50%;
+  }
+
+  .icon{
+    size: 2.5vh;
+  }
+
+  .arrow-button{
+    height: 9.4vh;
+    width: 3vw;
+  }
+
+  .arrow-button.one{
+    position: absolute;
+    left: 55.9vw;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .arrow-button.two{
+    position: absolute;
+    left: 77.9vw;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .calories-taken{
+    position: absolute;
+    left: 68.5vw;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+  }
+
+  .pie-chart{
+    width: 4.9vw;
+    position: absolute;
+    left: 67.6vw;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .calorie-target{
+    position: absolute;
+    left: 73.1vw;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+  }
+
+  .notification{
+    width: 4vw;
+    height: 6.24vh;
+    border-radius: 8px;
+    position: absolute;
+    left: 86.6vw;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .change-target{
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 4px;
+  }
+
+}
+
+@media screen and (min-height: 1000px) and  (min-width: 767px) {
+
+  nav > div{
+    flex: 1 1 0;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    height: 11vh;
+  }
+
+ 
+  .steps{
+    position: absolute;
+    top: 3.276vh;
+    left:33vw;
+  }
+  
+  .workout{
+    position: absolute;
+    top: 3.276vh;
+    left: 47.8vw;
+  }
+  
+  .nutrition{
+    position: absolute;
+    top: 3.276vh;
+    left: 68.6vw;
+  }
+
+  .user{
+    width: 92vw;
+    height: 25vh;
+  }
+
+  img{
+    height: 5vh;
+    width: 7vw;
+    vertical-align: middle;
+  }
+
+  .profile-img{
+    height: 5vh;
+    position: absolute;
+    top: 4vh;
+    left: 30vw;
+  }
+
+  .credentials{
+    position: absolute;
+    left: 38vw;
+    top: 4vh;
+  }
+
+  .name{
+    font-size: 1.5vh;
+    line-height: 2.6vh;
+  }
+
+  .email{
+    font-size: 1vh;
+    line-height: 1.9vh;
+  }
+
+  .progressBar{
+    width: 7vw;
+    position: absolute;
+    left: 29vw;
+    top: 11vh;
+  }
+
+  .walked-value,.calories-taken > h3{
+    font-size:1vh;
+    font-family:Montserrat;
+    font-weight:700;
+    color:white;
+  }
+
+  .walked,.calories-taken > p{
+    font-size:0.6vh;
+    font-family:Montserrat;
+    font-weight:500;
+    color:#BDBCBE;
+  }
+
+  .target{
+    position: absolute;
+    left: 38vw;
+    top: 11vh;
+
+  }
+
+  .target > h3,.calorie-target > h3{
+    font-size:1.5vh;
+  }
+
+  .target > p,.calorie-target > p{
+    font-size: 0.7vh;
+  }
+
+  .time-limit{
+    height: 15%;
+    position: absolute;
+    left: 46.8vw;
+    top: 9.7vh;
+  }
+
+  .day{
+    font-size: 1vh;
+    height: 50%;
+  }
+
+  .arrow-button{
+    width: 4vw;
+    height: 4.8vh;
+  }
+
+  .arrow-button.one{
+    position: absolute;
+    left: 55.9vw;
+    top: 11.2vh;
+  }
+
+  .arrow-button.two{
+    position: absolute;
+    left: 55.9vw;
+    top: 19.5vh;
+  }
+
+  .calories-taken{
+    position: absolute;
+    left: 39.7vw;
+    top: 19.5vh;
+    text-align: center;
+  }
+
+  .pie-chart{
+    width: 7vw;
+    position: absolute;
+    left: 38.1vw;
+    top:19.5vh;
+  }
+
+
+  .calorie-target{
+    position: absolute;
+    left: 47.1vw;
+    top: 19.5vh;
+    text-align: center;
+  }
+
+  .notification{
+    width: 5vw;
+    height: 4.5vh;
+    border-radius: 8px;
+    position: absolute;
+    left: 29.5vw;
+    top: 19.65vh
+  }
+
+  .change-target{
+    width: 3vw;
+    height: 1vh;
+    border-radius: 3px;
+  }
+
+}
+
+@media screen and (max-width: 767px)  {
+  nav > div{
+    width: 50vw;
+    margin: 1.15vh auto 0;
+    text-align: center;
+  }
+
+  .user{
+    margin-top: 2vh;
+    width: 88vw;
+    height: 30vh;
+  }
+
+ img{
+    height: 5vh;
+    width: 7vw;
+    vertical-align: middle;
+  }
+
+  .profile-img{
+    height: 5vh;
+    position: absolute;
+    top: 3.5vh;
+    left: 24vw;
+  }
+
+  .credentials{
+    position: absolute;
+    left: 33vw;
+    top: 4.8vh;
+  }
+
+  .name{
+    font-size: 1.5vh;
+  }
+
+  .email{
+    font-size: 1vh;
+  }
+
+  .progressBar{
+    width: 9vw;
+    position: absolute;
+    left: 24vw;
+    top: 11.5vh;
+  }
+
+  .walked-value,.calories-taken > h3{
+    font-size:0.8vh;
+    font-family:Montserrat;
+    font-weight:700;
+    color:white;
+    margin: 0;
+  }
+
+  .walked,.calories-taken > p{
+    font-size:0.6vh;
+    font-family:Montserrat;
+    font-weight:500;
+    color:#BDBCBE;
+    margin: 0;
+  }
+
+  .target{
+    position: absolute;
+    left: 36vw;
+    top: 10.3vh;
+
+  }
+
+  .target > h3,.calorie-target > h3{
+    font-size:1.5vh;
+    margin: 0;
+  }
+
+  .target > p,.calorie-target > p{
+    font-size: 0.7vh;
+    margin: 0;
+  }
+
+  .time-limit{
+    height: 15%;
+    position: absolute;
+    left: 46.8vw;
+    top: 12vh;
+  }
+
+  .day{
+    font-size: 1.1vh;
+    height: 50%;
+  }
+
+  .arrow-button{
+    width: 5vw;
+    height: 4vh;
+    border-radius: 4px;
+  }
+
+  .arrow-button.one{
+    position: absolute;
+    left: 61vw;
+    top: 11.9vh;
+  }
+
+  .arrow-button.two{
+    position: absolute;
+    left: 61vw;
+    top: 20.9vh;
+  }
+
+  .calories-taken{
+    position: absolute;
+    left: 36.9vw;
+    top: 22vh;
+    text-align: center;
+  }
+
+  .pie-chart{
+    width: 9vw;
+    position: absolute;
+    left: 35vw;
+    top: 8vh;
+  }
+
+  .calorie-target{
+    position: absolute;
+    left: 46.8vw;
+    top: 19.8vh;
+    text-align: center;
+  }
+
+  .notification{
+    width: 6.5vw;
+    height: 3.7vh;
+    border-radius: 6px;
+    position: absolute;
+    left: 25vw;
+    top: 21.05vh
+  }
+
+  .change-target{
+    width: 5vw;
+    height: 1.3vh;
+    border-radius: 3px;
+  }
+
 }
